@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-//import 'home_page.dart';
-import 'package:Notes/main.dart';
+import 'home_page.dart';
 
 class splashscreen extends StatefulWidget {
   @override
@@ -14,7 +13,7 @@ class _splashscreenState extends State<splashscreen> {
     super.initState();
     Timer(Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => MyApp(),
+        builder: (context) => HomePage(),
       ));
     });
   }
