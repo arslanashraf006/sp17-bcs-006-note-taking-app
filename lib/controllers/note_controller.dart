@@ -63,19 +63,6 @@ class NoteController extends GetxController {
     getAllNotes();
   }
 
-  // void deleteNote(int id) async {
-  //   Note note = Note(
-  //     id: id,
-  //   );
-  //   await DatabaseHelper.instance.deleteNote(note);
-  //   getAllNotes();
-  // }
-  //
-  // void deleteAllNotes() async {
-  //   await DatabaseHelper.instance.deleteAllNotes();
-  //   getAllNotes();
-  // }
-
   void updateNote(int id, String dTCreated) async {
     final title = titleController.text;
     final content = contentController.text;
@@ -104,4 +91,8 @@ class NoteController extends GetxController {
   void shareNote(String title, String content, String dateTimeEdited) {
     Share.share("$title \n\n$dateTimeEdited\n\n$content");
   }
+
+  // void shareNote(String title, String content, String dateTimeEdited) {
+  //   Share.share("$title \n\n$dateTimeEdited\n\n$content");
+  // }
 }

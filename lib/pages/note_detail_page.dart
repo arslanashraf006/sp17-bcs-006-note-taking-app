@@ -102,6 +102,12 @@ class NoteDetailPage extends StatelessWidget {
                             Icon(
                               Icons.share,
                             ),
+
+
+
+                            // Icon(
+                            //   Icons.share,
+                            // ),
                             SizedBox(
                               width: 20,
                             ),
