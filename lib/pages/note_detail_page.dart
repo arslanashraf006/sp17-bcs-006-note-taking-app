@@ -13,9 +13,10 @@ class NoteDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final int i = ModalRoute.of(context).settings.arguments;
     return Scaffold(
+      backgroundColor: Colors.white54,
       appBar: AppBar(
         brightness: Brightness.light,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.blue[300],
         iconTheme: IconThemeData(
           color: Colors.black,
         ),
@@ -103,8 +104,6 @@ class NoteDetailPage extends StatelessWidget {
                               Icons.share,
                             ),
 
-
-
                             // Icon(
                             //   Icons.share,
                             // ),
@@ -164,7 +163,7 @@ class NoteDetailPage extends StatelessWidget {
                     ],
                   ),
                 ),
-                backgroundColor: Colors.white,
+                backgroundColor: Colors.white54,
               );
             },
           ),

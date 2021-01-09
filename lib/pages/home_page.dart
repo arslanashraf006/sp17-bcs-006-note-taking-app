@@ -63,7 +63,7 @@ class HomePage extends StatelessWidget {
               },
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.grey[300],
+                  color: Colors.blue[300],
                   borderRadius: BorderRadius.circular(10),
                 ),
                 padding: EdgeInsets.all(15),
@@ -110,6 +110,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white54,
       appBar: AppBar(
         brightness: Brightness.light,
         title: Text(
@@ -118,7 +119,7 @@ class HomePage extends StatelessWidget {
             color: Colors.black,
           ),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.blue[300],
         centerTitle: true,
         iconTheme: IconThemeData(
           color: Colors.black,

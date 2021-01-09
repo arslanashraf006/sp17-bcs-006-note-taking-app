@@ -9,6 +9,7 @@ class AddNewNotePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white54,
       appBar: AppBar(
         brightness: Brightness.light,
         title: Text(
@@ -17,7 +18,7 @@ class AddNewNotePage extends StatelessWidget {
             color: Colors.black,
           ),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.blue[300],
         iconTheme: IconThemeData(
           color: Colors.black,
         ),
@@ -42,7 +43,7 @@ class AddNewNotePage extends StatelessWidget {
                   hintStyle: TextStyle(
                     fontSize: 27,
                     fontWeight: FontWeight.bold,
-                    color: Colors.grey[600],
+                    color: Colors.black,
                     letterSpacing: 1,
                   ),
                   border: InputBorder.none,

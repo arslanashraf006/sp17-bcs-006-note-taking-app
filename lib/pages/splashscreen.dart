@@ -27,9 +27,12 @@ class _splashscreenState extends State<splashscreen> {
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           CircleAvatar(
-            radius: 50.0,
+            radius: 200.0,
             backgroundColor: Colors.white,
             backgroundImage: AssetImage('images/arslan.jpg'),
+          ),
+          SizedBox(
+            height: 20.0,
           ),
           Text(
             'Arslan Ashraf',
@@ -47,6 +50,9 @@ class _splashscreenState extends State<splashscreen> {
               color: Colors.white,
               thickness: 5.0,
             ),
+          ),
+          SizedBox(
+            height: 20.0,
           ),
           Card(
             color: Colors.white,
