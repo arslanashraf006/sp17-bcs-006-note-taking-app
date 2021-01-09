@@ -83,6 +83,26 @@ class NoteController extends GetxController {
     Get.back();
   }
 
+  // void updateNote(int id, String dTCreated) async {
+  //   final title = titleController.text;
+  //   final content = contentController.text;
+  //   Note note = Note(
+  //     id: id,
+  //     title: title,
+  //     content: content,
+  //     dateTimeEdited:
+  //         DateFormat("MMM dd, yyyy HH:mm:ss").format(DateTime.now()),
+  //     dateTimeCreated: dTCreated,
+  //   );
+  //   await DatabaseHelper.instance.updateNote(note);
+  //   contentWordCount = wordCount(content);
+  //   contentCharCount = charCount(content);
+  //   titleController.text = "";
+  //   contentController.text = "";
+  //   getAllNotes();
+  //   Get.back();
+  // }
+
   void getAllNotes() async {
     notes = await DatabaseHelper.instance.getNoteList();
     update();

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
-//import '../pages/note_detail_page.dart';
+import '../pages/note_detail_page.dart';
 import '../controllers/note_controller.dart';
 
 class SearchBar extends SearchDelegate {
@@ -61,10 +61,10 @@ class SearchBar extends SearchDelegate {
         itemBuilder: (context, index) {
           return GestureDetector(
             onTap: () {
-              //Get.to(
-              // NoteDetailPage(),
-              //arguments: index,
-              //);
+              Get.to(
+                NoteDetailPage(),
+                arguments: index,
+              );
             },
             child: Container(
               decoration: BoxDecoration(

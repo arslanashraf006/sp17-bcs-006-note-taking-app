@@ -4,7 +4,7 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 import '../controllers/note_controller.dart';
 import '../pages/add_new_note_page.dart';
-//import '../pages/note_detail_page.dart';
+import '../pages/note_detail_page.dart';
 import '../widgets/alertdialog_widget.dart';
 import '../widgets/search_bar.dart';
 
@@ -38,10 +38,10 @@ class HomePage extends StatelessWidget {
           itemBuilder: (context, index) {
             return GestureDetector(
               onTap: () {
-                //Get.to(
-                //  NoteDetailPage(),
-                //arguments: index,
-                // );
+                Get.to(
+                  NoteDetailPage(),
+                  arguments: index,
+                );
               },
               onLongPress: () {
                 showDialog(
