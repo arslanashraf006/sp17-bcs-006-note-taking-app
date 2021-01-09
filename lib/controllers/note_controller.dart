@@ -63,6 +63,19 @@ class NoteController extends GetxController {
     getAllNotes();
   }
 
+  // void deleteNote(int id) async {
+  //   Note note = Note(
+  //     id: id,
+  //   );
+  //   await DatabaseHelper.instance.deleteNote(note);
+  //   getAllNotes();
+  // }
+  //
+  // void deleteAllNotes() async {
+  //   await DatabaseHelper.instance.deleteAllNotes();
+  //   getAllNotes();
+  // }
+
   void updateNote(int id, String dTCreated) async {
     final title = titleController.text;
     final content = contentController.text;
@@ -82,26 +95,6 @@ class NoteController extends GetxController {
     getAllNotes();
     Get.back();
   }
-
-  // void updateNote(int id, String dTCreated) async {
-  //   final title = titleController.text;
-  //   final content = contentController.text;
-  //   Note note = Note(
-  //     id: id,
-  //     title: title,
-  //     content: content,
-  //     dateTimeEdited:
-  //         DateFormat("MMM dd, yyyy HH:mm:ss").format(DateTime.now()),
-  //     dateTimeCreated: dTCreated,
-  //   );
-  //   await DatabaseHelper.instance.updateNote(note);
-  //   contentWordCount = wordCount(content);
-  //   contentCharCount = charCount(content);
-  //   titleController.text = "";
-  //   contentController.text = "";
-  //   getAllNotes();
-  //   Get.back();
-  // }
 
   void getAllNotes() async {
     notes = await DatabaseHelper.instance.getNoteList();
